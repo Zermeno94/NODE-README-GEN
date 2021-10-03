@@ -10,7 +10,9 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 
 // Inquirer prompts(questions) to user
-inquirer.prompt([
+const promptUser = () => {
+    inquirer.prompt([
+        
         { // project title 
             type: "input",
             name: "title",
@@ -77,7 +79,11 @@ inquirer.prompt([
             name: "repo",
             message: "What is your repo link?"
         }
-     ])  //.then(response => {
+     ])  
+     
+     // this didn't work out 
+     // pulled from mini-project
+     //.then(response => {
     //     console.log('response', response);
 
     //     fs.writeFile('index.html', html, function (err) {
@@ -91,13 +97,15 @@ inquirer.prompt([
         
 // TODO: Create a function to write README file
 
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync('./output/readme.md',generateMarkdown(answers));
+}
 
 // TODO: Create a function to initialize app
  const init = () => {
    promptUser()
          // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('readme.md', generateMarkdown(answers)))
+        .then((answers) => fs.writeFileSync('./output/readme.md', generateMarkdown(answers)))
       .then(() => console.log('Success! You created a readme.md'))
          .catch((err) => console.error(err));
  };
@@ -121,4 +129,4 @@ function writeToFile(fileName, data) {}
 // WHEN I enter my email address
 // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 // WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the //README
+// THEN I am taken to the corresponding section of the //
