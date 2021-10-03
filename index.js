@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // Inquirer prompts(questions) to user
-inquirer.prompt([
+const questions=[
     { // project title 
         type: "input",
         name: "title",
@@ -73,7 +73,7 @@ inquirer.prompt([
         name: "repo",
         message: "What is your repo link?"
     }
-]).then(response=> { // displays response to terminal
+].then(response=> { // displays response to terminal
     console.log('response', response);
 
     // const README =
@@ -88,6 +88,9 @@ inquirer.prompt([
     });
     })
 
+    // init(){}
+
+//call init();
 
 //TODO
 
