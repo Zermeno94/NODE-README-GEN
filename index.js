@@ -72,6 +72,16 @@ inquirer.prompt([
 ]).then(response=> { // displays response to terminal
     console.log('response', response);
 
+    // fs method to print out user responses
+    fs.writeFile('README.md', readme.md,function (err) {
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log('Success!');
+    });
+    })
+
 
 //TODO
 
@@ -87,4 +97,4 @@ inquirer.prompt([
 // WHEN I enter my email address
 // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 // WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
+// THEN I am taken to the corresponding section of the //README
