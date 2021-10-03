@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Zermeno94/NODE-README-GEN#readme",
   "dependencies": {
-    "inquirer": "^8.1.5"
+    "inquirer": "^8.1.5",
+    "utils": "^0.3.1"
   }
 }

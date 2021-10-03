@@ -2,6 +2,9 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 
+//internal modules
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
 
 // Inquirer prompts(questions) to user
 inquirer.prompt([
@@ -72,6 +75,8 @@ inquirer.prompt([
     }
 ]).then(response=> { // displays response to terminal
     console.log('response', response);
+
+    // const README =
 
     // fs method to print out user responses
     fs.writeFile("README.md",response,function (err) {
