@@ -128,6 +128,7 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
+// Pulled this from bonus solved mini-project
  const init = () => {
    promptUser()
          // Use writeFileSync method to use promises instead of a callback function
