@@ -3,7 +3,7 @@ const fs = require('fs');
 // imports inquirer & fs
 
 // questions that will be asked
-const questions = [
+inquirer.prompt([
     { // project title 
         type: "input",
         name: "title",
@@ -68,8 +68,9 @@ const questions = [
         type: "input",
         name: "repo",
         message: "What is your repo link?"
-    },
-];
+    }
+]).then(response=> { // displays response to terminal
+    console.log('response', response);
 
 
 //TODO
