@@ -1,8 +1,10 @@
-// exporting packages: 'inquirer' & 'fs'
+// Exporting packages: 'inquirer' & 'fs'
 const inquirer = require("inquirer");
 const fs = require('fs');
+const util = require('util');
 
-//internal modules
+
+//Internal modules
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -76,10 +78,11 @@ const questions=[
     }
 ].then(response=> { // displays response to terminal
     console.log('response', response);
+  // const readme =
 
-    // const README =
-
-    // fs method to print out user responses
+  // add readme template
+    
+    //fs method to print out user responses
     fs.writeFile("README.md",response,function (err) {
         if (err) {
             return console.log(err);
@@ -88,6 +91,7 @@ const questions=[
         console.log('Yay!Your README file has been created!');
     });
     })
+
 
     // init(){}
 
