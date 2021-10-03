@@ -73,12 +73,12 @@ inquirer.prompt([
     console.log('response', response);
 
     // fs method to print out user responses
-    fs.writeFile('README.md', readme.md,function (err) {
+    fs.writeFile("README.md",function (err) {
         if (err) {
             return console.log(err);
         }
 
-        console.log('Success!');
+        console.log('README file with success!');
     });
     })
 
