@@ -9,8 +9,9 @@ const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
+
 // Inquirer prompts(questions) to user
-const questions=[
+inquirer.prompt=[
     { // project title 
         type: "input",
         name: "title",
@@ -87,21 +88,20 @@ const questions=[
 
   // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
+
     
   // TODO: Create a function to write README file
-    //fs method to print out user responses
-    fs.writeFile("README.md",response,function (err) {
-        if (err) {
-            return console.log(err);
-        }
-
-        console.log('Yay!Your README file has been created!');
-    });
-    })
+    //fs method to print out user response
 
 
 // TODO: Create a function to initialize app
-function init() {}
+// pulled from mini-project bonus solved
+const init = () => {
+    promptUser()
+        // Use writeFileSync method to use promises instead of a callback function
+        .then((answers) => fs.writeFileSync('readme.md',generateMarkdown(answers)))
+        .then(() => console.log('Yay! You created a readme.md'))
+        .catch((err) => console.error(err));
 
 // Function call to initialize app
 init();
