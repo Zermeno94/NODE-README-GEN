@@ -1,8 +1,9 @@
+// exporting packages: 'inquirer' & 'fs'
 const inquirer = require("inquirer");
 const fs = require('fs');
-// imports inquirer & fs
 
-// questions that will be asked
+
+// Inquirer prompts(questions) to user
 inquirer.prompt([
     { // project title 
         type: "input",
@@ -73,12 +74,12 @@ inquirer.prompt([
     console.log('response', response);
 
     // fs method to print out user responses
-    fs.writeFile("README.md",function (err) {
+    fs.writeFile("README.md",response,function (err) {
         if (err) {
             return console.log(err);
         }
 
-        console.log('README file with success!');
+        console.log('Yay!Your README file has been created!');
     });
     })
 
