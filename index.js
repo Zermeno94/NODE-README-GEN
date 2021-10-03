@@ -1,3 +1,4 @@
+// TODO: Include packages needed for this application
 // Exporting packages: 'inquirer' & 'fs'
 const inquirer = require("inquirer");
 const fs = require('fs');
@@ -7,7 +8,7 @@ const util = require('util');
 //Internal modules
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-
+// TODO: Create an array of questions for user input
 // Inquirer prompts(questions) to user
 const questions=[
     { // project title 
@@ -76,12 +77,18 @@ const questions=[
         name: "repo",
         message: "What is your repo link?"
     }
+
+    
 ].then(response=> { // displays response to terminal
     console.log('response', response);
   // const readme =
 
   // add readme template
+
+  // TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
     
+  // TODO: Create a function to write README file
     //fs method to print out user responses
     fs.writeFile("README.md",response,function (err) {
         if (err) {
@@ -93,9 +100,12 @@ const questions=[
     })
 
 
-    // init(){}
+// TODO: Create a function to initialize app
+function init() {}
 
-//call init();
+// Function call to initialize app
+init();
+
 
 //TODO
 
