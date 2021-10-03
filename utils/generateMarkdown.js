@@ -1,10 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (!license) {
-    return;
+  const yourLicense = ''
+  if(licenseType === 'MIT') {
+    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+  } else if (licenseType === 'GPLv3') {
+    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+  } else if (licenseType === 'GPL') {
+    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
+  } else {
+    license.license = "N/A"
   }
-}
+  return yourLicense;
+};
+
 
 
 // TODO: Create a function that returns the license link
@@ -24,10 +33,38 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+// readme template 
 function generateMarkdown(response,data) {
-  return `# ${data.title}
-  ## license
-  ${renderLicenseBadge(license)}
+  return `
+  # **${data.title}**
+${data.badge}
+## Description 
+${data.description}
+## Table of contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Licence](#Licence)
+- [Contributors](#Contributors)
+- [Test](#Test)
+- [Repository Link](#Repository)
+- [GitHub Info](#GitHub) 
+## Installation
+        ${data.installation}
+## Usage
+${data.usage}
+## Licence
+${data.licence}
+## Contributors
+${data.contributing}
+## Test
+${data.test}
+## Repository
+- [Project Repo](${data.repo})
+## GitHub
+// maybe
+- [GitHub Profile](${githubInfo.profile})
+- <${githubInfo.email}>
 `;
 }
 
