@@ -59,5 +59,5 @@ Here are some guidelines to help you get started:
 
 ## Resources & Tutorials
 * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-
+* https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error
 

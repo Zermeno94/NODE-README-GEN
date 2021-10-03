@@ -45,9 +45,10 @@ const questions=[
     },
 
     { //license
-        type: "input",
+        type: "checkbox", // added checkbox 
         name: "license",
-        message: "Please provide the project licence or your badge link"
+        choices: ["MIT", "GPLv3", "GPL"],
+        message: "Pick your License?"
     },
 
     { // badge
