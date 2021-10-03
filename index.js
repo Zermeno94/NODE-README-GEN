@@ -8,79 +8,104 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // TODO: Create an array of questions for user input
+// my array was functioning the way i thought it would like in mini-project
+// so i decided to create object for questions 
+
+const questions = {
+    title: 'What is the title of your project?',
+
+    description: 'Please provide a description of the project.',
+
+    installation: 'Please provide any installation instructions.',
+
+    usage: 'Please provide any usage instructions you have for the end user.',
+
+    license: 'Do you want to include a license in this project?',
+
+    contributing: 'Please enter any contribution guidelines you have for the project.',
+
+    tests: 'Please provide any test instructions you have for the project.',
+
+    email: 'What is your email address?',
+
+    github: 'What is your GitHub username?',
+
+    repository: 'Please provide link to your GitHub repository?'
+};
 
 // Inquirer prompts(questions) to user
 const promptUser = () => {
-    inquirer.prompt([
+    return inquirer.prompt([
         
         { // project title 
             type: "input",
             name: "title",
-            message: "What is your project title?"
+            message: questions.title
         },
     
         { //description 
             type: "input",
             name: "description",
-            message: "Please provide your project's description"
+            message: questions.description
         },
         
         { //  installation instructions,  and test instructions
             type: "input",
             name: "installation",
-            message: "Please provide the installation instructions"
+            message: questions.installation
         },
     
         { //usage information
             type: "input",
             name: "usage",
-            message: "Please provide the project usage"
+            message: questions.usage
         },
     
         { //contribution guidelines
             type: "input",
             name: "contributing",
-            message: "Please provide the contributing parties"
+            message: questions.contributing
         },
     
         { //usage
             type: "input",
             name: "usage",
-            message: "Please provide the project usage"
+            message: questions.usage
         },
     
         { //license
             type: "checkbox", // added checkbox 
             name: "license",
             choices: ["MIT", "GPLv3", "GPL"], /// need to pull these licenses 
-            message: "Pick your License?"
+            message: questions.license
         },
     
         { // badge
             type: "input",
             name: "badge",
-            message: "Please provide the badges links that you want"
+            message: questions.badge
         },
     
         { //test
             type: "input",
             name: "test",
-            message: "Please provide the project tests"
+            message: questions.test
         },
     
         { //github username 
             type: "input",
             name: "username",
-            message: "What is your github user name?"
+            message: questions.username
         },
     
         { //github rep
             type: "input",
-            name: "repo",
-            message: "What is your repo link?"
+            name: "repository",
+            message: questions.repository
         }
-     ])  
-     
+    ]);
+};
+
      // this didn't work out 
      // pulled from mini-project
      //.then(response => {
@@ -101,32 +126,16 @@ function writeToFile(fileName, data) {
     fs.writeFileSync('./output/readme.md',generateMarkdown(answers));
 }
 
+
 // TODO: Create a function to initialize app
  const init = () => {
    promptUser()
          // Use writeFileSync method to use promises instead of a callback function
         .then((answers) => fs.writeFileSync('./output/readme.md', generateMarkdown(answers)))
-      .then(() => console.log('Success! You created a readme.md'))
-         .catch((err) => console.error(err));
+        .then(() => console.log('Success! You created a readme.md.'))
+        .catch((err) => console.error(err));
  };
 
 // Function call to initialize app
  init();
 
-
-
-//TODO
-
-//THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-//WHEN I enter my project title
-//THEN this is displayed as the title of the README
-//WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-//THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-//WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the //
