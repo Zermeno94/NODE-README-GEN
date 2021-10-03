@@ -1,109 +1,110 @@
 // TODO: Include packages needed for this application
 // Exporting packages: 'inquirer' & 'fs'
 const inquirer = require("inquirer");
-const fs = require('fs');
-const util = require('util');
-
+const fs = require("fs");
 
 //Internal modules
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
+
 // TODO: Create an array of questions for user input
 
 // Inquirer prompts(questions) to user
-inquirer.prompt=[
-    { // project title 
-        type: "input",
-        name: "title",
-        message: "What is your project title?"
-    },
-
-    { //description 
-        type: "input",
-        name: "description",
-        message: "Please provide your project's description"
-    },
+inquirer.prompt([
+        { // project title 
+            type: "input",
+            name: "title",
+            message: "What is your project title?"
+        },
     
-    { //  installation instructions,  and test instructions
-        type: "input",
-        name: "installation",
-        message: "Please provide the installation instructions"
-    },
-
-    { //usage information
-        type: "input",
-        name: "usage",
-        message: "Please provide the project usage"
-    },
-
-    { //contribution guidelines
-        type: "input",
-        name: "contributing",
-        message: "Please provide the contributing parties"
-    },
-
-    { //usage
-        type: "input",
-        name: "usage",
-        message: "Please provide the project usage"
-    },
-
-    { //license
-        type: "checkbox", // added checkbox 
-        name: "license",
-        choices: ["MIT", "GPLv3", "GPL"],
-        message: "Pick your License?"
-    },
-
-    { // badge
-        type: "input",
-        name: "badge",
-        message: "Please provide the badges links that you want"
-    },
-
-    { //test
-        type: "input",
-        name: "test",
-        message: "Please provide the project tests"
-    },
-
-    { //github username 
-        type: "input",
-        name: "username",
-        message: "What is your github user name?"
-    },
-
-    { //github rep
-        type: "input",
-        name: "repo",
-        message: "What is your repo link?"
-    }
-
+        { //description 
+            type: "input",
+            name: "description",
+            message: "Please provide your project's description"
+        },
+        
+        { //  installation instructions,  and test instructions
+            type: "input",
+            name: "installation",
+            message: "Please provide the installation instructions"
+        },
     
-].then(response=> { // displays response to terminal
-    console.log('response', response);
+        { //usage information
+            type: "input",
+            name: "usage",
+            message: "Please provide the project usage"
+        },
+    
+        { //contribution guidelines
+            type: "input",
+            name: "contributing",
+            message: "Please provide the contributing parties"
+        },
+    
+        { //usage
+            type: "input",
+            name: "usage",
+            message: "Please provide the project usage"
+        },
+    
+        { //license
+            type: "checkbox", // added checkbox 
+            name: "license",
+            choices: ["MIT", "GPLv3", "GPL"], /// need to pull these licenses 
+            message: "Pick your License?"
+        },
+    
+        { // badge
+            type: "input",
+            name: "badge",
+            message: "Please provide the badges links that you want"
+        },
+    
+        { //test
+            type: "input",
+            name: "test",
+            message: "Please provide the project tests"
+        },
+    
+        { //github username 
+            type: "input",
+            name: "username",
+            message: "What is your github user name?"
+        },
+    
+        { //github rep
+            type: "input",
+            name: "repo",
+            message: "What is your repo link?"
+        }
+     ])  //.then(response => {
+    //     console.log('response', response);
 
-  // add readme template
+    //     fs.writeFile('index.html', html, function (err) {
+    //         if (err) {
+    //             return console.log(err);
+    //         }
+    
+    //         console.log('Success! You have created a readme.');
+    //     });
+    //     })
+        
+// TODO: Create a function to write README file
 
-  // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-    
-  // TODO: Create a function to write README file
-    //fs method to print out user response
-
-
 // TODO: Create a function to initialize app
-// pulled from mini-project bonus solved
-const init = () => {
-    promptUser()
-        // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('readme.md',generateMarkdown(answers)))
-        .then(() => console.log('Yay! You created a readme.md'))
-        .catch((err) => console.error(err));
+ const init = () => {
+   promptUser()
+         // Use writeFileSync method to use promises instead of a callback function
+        .then((answers) => fs.writeFileSync('readme.md', generateMarkdown(answers)))
+      .then(() => console.log('Success! You created a readme.md'))
+         .catch((err) => console.error(err));
+ };
 
 // Function call to initialize app
-init();
+ init();
+
 
 
 //TODO

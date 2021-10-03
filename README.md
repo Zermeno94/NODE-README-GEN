@@ -14,7 +14,6 @@ SO THAT I can quickly create a professional README for a new project
 ```
 
 ## Table of contents
-=================
 
    * [Description](#Description)
    * [Installation](#Installation)
@@ -28,7 +27,7 @@ SO THAT I can quickly create a professional README for a new project
 
 
 ## Installation 
-==============
+
 To generate your own README.md, you will first need to run: 
 
 ```bash
@@ -42,40 +41,39 @@ To generate your own README.md, you will first need to run:
 The application can be invoked with `node index.js/` 
 
 ## Usage
-==============
+
 
 [enter screencastify demo here ]
 
 [enter explantion here ]
 
 ## License 
-==============
+
 
  MIT License 
 
 ## Contributors 
-==============
+
 
 Miranda Zermeno
 
 ## Test
-==============
 
 [enter here]
 
 ## Repository
-==============
+
 
 * ["https://github.com/Zermeno94/NODE-README-GEN"]
 
 
 ## GitHub info
-==============
+
 
 [enter info here ]
 
 ## Resources & Tutorials
-======================
+
 
 * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 * https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error
