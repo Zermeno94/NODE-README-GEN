@@ -82,7 +82,6 @@ inquirer.prompt=[
     
 ].then(response=> { // displays response to terminal
     console.log('response', response);
-  // const readme =
 
   // add readme template
 

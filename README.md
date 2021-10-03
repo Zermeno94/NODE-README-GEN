@@ -13,7 +13,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
-Table of contents
+## Table of contents
 =================
 
    * [Description](#Description)
@@ -24,9 +24,10 @@ Table of contents
    * [Test](#Test)
    * [Repository](#Repository)
    * [GitHub info](#GitHub)
+   * [Resources](#Resources)
 
 
-Installation 
+## Installation 
 ==============
 To generate your own README.md, you will first need to run: 
 
@@ -40,40 +41,40 @@ To generate your own README.md, you will first need to run:
 
 The application can be invoked with `node index.js/` 
 
-Usage
+## Usage
 ==============
 
 [enter screencastify demo here ]
 
 [enter explantion here ]
 
-License 
+## License 
 ==============
 
-MIT License 
+ MIT License 
 
-Contributors 
+## Contributors 
 ==============
 
 Miranda Zermeno
 
-Test
+## Test
 ==============
 
 [enter here]
 
-Repository
+## Repository
 ==============
 
 * ["https://github.com/Zermeno94/NODE-README-GEN"]
 
 
-GitHub info
+## GitHub info
 ==============
 
 [enter info here ]
 
-Resources & Tutorials
+## Resources & Tutorials
 ======================
 
 * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
