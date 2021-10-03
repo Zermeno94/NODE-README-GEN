@@ -1,0 +1,23 @@
+{
+  "name": "NODE-README-GEN",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zermeno94/NODE-README-GEN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zermeno94/NODE-README-GEN/issues"
+  },
+  "homepage": "https://github.com/Zermeno94/NODE-README-GEN#readme",
+  "dependencies": {
+    "inquirer": "^8.1.5"
+  }
+}
