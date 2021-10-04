@@ -89,3 +89,4 @@ The application can be invoked with `node index.js`
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 * https://dev.to/somedood/the-proper-way-to-write-async-constructors-in-javascript-1o8c
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
+* https://www.tabnine.com/code/javascript/functions/init

@@ -66,16 +66,17 @@ function promptUser(){
     ]);
 } 
 
-// Async function using util.promisify 
+// Async function 
 
   async function init() {
     try {
         // Ask user questions and generate responses
         const answers = await promptUser();
         const generateContent = generateMarkdown(answers);
-        // Write new README.md to dist directory
-        await writeFileSync('./output/README.md', generateContent);
-        console.log('✔️  Successfully wrote to README.md');
+
+        // Prints out README.md to 'output' file 
+        await writeFileAsync('./output/README.md', generateContent);
+        console.log('Success! You created a README.md'); // This will display to user if readme was succesfully created
     }   catch(err) {
         console.log(err);
     }
