@@ -1,86 +1,79 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (!license) {
-      return '';
-  }
-};
+// TODO: Create a function to generate markdown for README
+function generateReadme(answers) {
+  return `
+<h1 align="center"> ✨${answers.projectTitle} ✨</h1>
 
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br /> // the users input for license will  display license on top of readme 
 
+## Description 📖  // added emojis to make it unique 
+${answers.description}
+## Table of Contents
+- [Description](#description) // responsive link to redirect user to selected section 
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  const yourLicense = ''
-  if(licenseType === 'MIT') {
-    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-  } else if (licenseType === 'GPLv3') {
-    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-  } else if (licenseType === 'GPL') {
-    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
-  } else {
-    license.license = "N/A"
-  }
-  return yourLicense;
-}
+## Installation 💾
+${answers.installation}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (!license) {
-    return;
-  } return `## License
-  ${renderLicenseLink(license)}
+## Usage 🖥️
+${answers.usage}
+
+## License
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+<br />
+
+This application is covered by the ${answers.license} license. // this show below ^
+
+## Contributing 👩‍💻
+${answers.contributing}
+
+## Tests 📝
+${answers.tests}
+
+## Questions 💭
+${answers.questions}
+<br/>
+<br/>
+
+Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
+<br/>
+<br/>
+📧Email me with any questions: ${answers.email}<br /><br />
   `;
 }
 
-// TODO: Create a function to generate markdown for README
-// readme template 
-function generateMarkdown(data) {
-  return `# ${data.title}
+module.exports = generateReadme;
 
-## Description 
-${data.description}
+// This was original approach to generateMarkdown rendering, but found it too messy and changed it. 
 
+// function renderLicenseBadge(license) {
+//   if (!license) {
+//       return '';
+//   }
+// };
 
-## Table of contents 
-- [Description](#Description)
-- [Installation](#Installation) 
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributors](#Contributors)
-- [Test](#Test)
-- [Email](#Email)
-- [GitHub Info](#GitHub) 
-- [Repository Link](#Repository)
+// function renderLicenseLink(license) {
+//   const yourLicense = ''
+//   if(licenseType === 'MIT') {
+//     yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+//   } else if (licenseType === 'GPLv3') {
+//     yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+//   } else if (licenseType === 'GPL') {
+//     yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
+//   } else {
+//     license.license = "N/A"
+//   }
+//   return yourLicense;
+// }
 
-
-
-## Installation
-${data.installation}
-
-## Usage
-${data.usage}
-
-## Licence
-${data.licence ? renderLicenseSection(data.licenseType) : ''}
-
-## Contributors
-${data.contributing}
-
-## Test
-${data.test}
-
-## Email
-- <${response.email}>
-
-## GitHub Id
-- [GitHub Id](${githubInfo.profile})
-
-
-## Repository
-- [Project Repo](${data.repo})
-`;
-}
-
-module.exports = generateMarkdown;
+// function renderLicenseSection(license) {
+//   if (!license) {
+//     return;
+//   } return `## License
+//   ${renderLicenseLink(license)}
+//   `;
+// }

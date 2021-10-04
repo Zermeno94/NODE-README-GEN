@@ -82,4 +82,10 @@ The application can be invoked with `node index.js`
 * https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents
 * https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 * https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links
-
+* https://www.geeksforgeeks.org/node-js-util-promisify-method/
+* https://shields.io/
+* https://stackoverflow.com/questions/65819996/shield-io-license-badges-and-github-license-badge-not-working
+* https://www.mygreatlearning.com/blog/readme-file/
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+* https://dev.to/somedood/the-proper-way-to-write-async-constructors-in-javascript-1o8c
+* https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
