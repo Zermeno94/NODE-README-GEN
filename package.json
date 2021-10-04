@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Zermeno94/NODE-README-GEN#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "i": "^0.3.7",
     "inquirer": "^8.1.5",
     "utils": "^0.3.1"
   }
