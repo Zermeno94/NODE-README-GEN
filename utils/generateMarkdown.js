@@ -1,7 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
+  if (!license) {
+      return '';
+  }
 };
 
 
@@ -27,16 +29,20 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (!license) {
     return;
-  }
+  } return `## License
+  ${renderLicenseLink(license)}
+  `;
 }
 
 // TODO: Create a function to generate markdown for README
 // readme template 
-function generateMarkdown(response,data) {
-  return ` <h1 align="center">${answers.projectTitle}</h1> 
+function generateMarkdown(data) {
+  return `# ${data.title}
 
 ## Description 
 ${data.description}
+
+
 ## Table of contents
 - [Description](#Description)
 - [Installation](#Installation)
@@ -44,22 +50,32 @@ ${data.description}
 - [Licence](#Licence)
 - [Contributors](#Contributors)
 - [Test](#Test)
+- [Email](#Email)
 - [GitHub Info](#GitHub) 
 - [Repository Link](#Repository)
 
 ## Installation
 ${data.installation}
+
 ## Usage
 ${data.usage}
+
 ## Licence
-${data.licence}
+${data.licence ? renderLicenseSection(data.licenseType) : ''}
+
 ## Contributors
 ${data.contributing}
+
 ## Test
 ${data.test}
-## GitHub Info
-- [GitHub Profile](${githubInfo.profile})
-- <${githubInfo.email}>
+
+## Email
+- <${response.email}>
+
+## GitHub Id
+- [GitHub Id](${githubInfo.profile})
+
+
 ## Repository
 - [Project Repo](${data.repo})
 `;
