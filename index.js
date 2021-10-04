@@ -1,10 +1,11 @@
 // TODO: Include packages needed for this application
-// Exporting packages: 'inquirer' & 'fs'
+// Exporting  & Internal packages
 const inquirer = require("inquirer");
 const fs = require("fs");
-
-//Internal modules
+const utils = require("util");
 const generateMarkdown = require('./utils/generateMarkdown.js');
+const writeFilesync = utils.proisify(fs.writeFile);
+
 
 
 // TODO: Create an array of questions for user input
@@ -124,7 +125,7 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 
 function writeToFile(fileName, data) {
-    fs.writeFileSync('./output/readme.md',generateMarkdown(answers));
+    fs.writeFileSync('./utils/readme.md',generateMarkdown(answers));
 }
 
 
@@ -133,7 +134,7 @@ function writeToFile(fileName, data) {
  const init = () => {
    promptUser()
          // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('./output/readme.md', generateMarkdown(answers)))
+        .then((answers) => fs.writeFileSync('./utils/readme.md', generateMarkdown(answers)))
         .then(() => console.log('Success! You created a readme.md.'))
         .catch((err) => console.error(err));
  };
