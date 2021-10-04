@@ -3,12 +3,12 @@ function generateReadme(answers) {
   return `
 <h1 align="center"> ✨${answers.projectTitle} ✨</h1>
 
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br /> // the users input for license will  display license on top of readme 
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br /> 
 
-## Description 📖  // added emojis to make it unique 
+## Description 📖  
 ${answers.description}
 ## Table of Contents
-- [Description](#description) // responsive link to redirect user to selected section 
+- [Description](#description) 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -26,7 +26,7 @@ ${answers.usage}
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 <br />
 
-This application is covered by the ${answers.license} license. // this show below ^
+This application is covered by the ${answers.license} license. 
 
 ## Contributing 👩‍💻
 ${answers.contributing}
