@@ -43,9 +43,9 @@ function generateMarkdown(data) {
 ${data.description}
 
 
-## Table of contents
+## Table of contents 
 - [Description](#Description)
-- [Installation](#Installation)
+- [Installation](#Installation) 
 - [Usage](#Usage)
 - [Licence](#Licence)
 - [Contributors](#Contributors)
@@ -53,6 +53,8 @@ ${data.description}
 - [Email](#Email)
 - [GitHub Info](#GitHub) 
 - [Repository Link](#Repository)
+
+
 
 ## Installation
 ${data.installation}

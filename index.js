@@ -95,7 +95,9 @@ const promptUser = () => { // this was pulled from bonus solved mini-project
             message: questions.repository
         }
     ]);
+
 };
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync('./output/readme.md', generateMarkdown(answers));
