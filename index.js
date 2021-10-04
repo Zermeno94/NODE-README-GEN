@@ -34,6 +34,7 @@ const questions = {
 };
 
 // Inquirer prompts(questions) to user
+// pulled from bonus mini project
 const promptUser = () => {
     return inquirer.prompt([
         
