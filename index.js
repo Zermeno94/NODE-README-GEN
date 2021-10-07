@@ -7,7 +7,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //Prompt the user questions to populate the README.md
 function promptUser(){
-    return inquirer.prompt([
+    return inquirer.prompt = ()=> ([
         {
             type: "input",
             name: "projectTitle",
@@ -66,21 +66,18 @@ function promptUser(){
     ]);
 } 
 
-// Async function 
+function writeToFile(fileName,date) {
+    fs.writeFileSync('./output/readme.md', generateMarkdown(answer));
+}
 
-  async function init() {
-    try {
-        // Ask user questions and generate responses
-        const answers = await promptUser();
-        const generateContent = generateMarkdown(answers);
-
+  const init= () => {
+    promptUser ()
+        .then((answers) => fs.writeFileSync('./output/README.MD', generateMarkdown(answers)))
+        .then(() => console.log('Success! You created a README.md.'))
+        .catch((err) => console.error(err));
         // Prints out README.md to 'output' file 
-        await writeFileAsync('./output/README.md', generateContent);
-        console.log('Success! You created a README.md'); // This will display to user if readme was succesfully created
-    }   catch(err) {
-        console.log(err);
-    }
-  }
+    
+  };
   
   init();  
 
