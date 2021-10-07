@@ -1,9 +1,8 @@
 // Exporting and Internal packages 
 const fs = require("fs");
-const util = require("util");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
-const writeFileAsync = util.promisify(fs.writeFile);
+
 
 //Prompt the user questions to populate the README.md
 function promptUser(){
