@@ -1,7 +1,8 @@
+
 // TODO: Create a function to generate markdown for README
 function generateReadme(answers) {
   return `
-<h1 align="center"> ✨${answers.projectTitle} ✨</h1>
+<h1> ✨${answers.projectTitle} ✨</h1>
 
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br /> 
 
@@ -36,12 +37,10 @@ ${answers.tests}
 
 ## Questions 💭
 ${answers.questions}
-<br/>
-<br/>
 
-Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
+GitHub: [${answers.username}](https://github.com/${answers.username})
 
-📧Email me with any questions: ${answers.email}
+📧Email: [${data.email}](mailto:${data.email})
   `;
 }
 
