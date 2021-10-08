@@ -75,8 +75,6 @@ function promptUser(){
 
 };
 
-
-
   const init= () => { // Prints out README.md to 'output' file 
     promptUser()
     // console.log("Hello")
