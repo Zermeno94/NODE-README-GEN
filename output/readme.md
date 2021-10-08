@@ -1,10 +1,10 @@
 
-<h1 align="center"> ✨NODE-README-GEN ✨</h1>
+<h1> ✨undefined ✨</h1>
 
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br /> 
+![badge](https://img.shields.io/badge/license-undefined-brightgreen)<br/> 
 
 ## Description 📖  
-This application builds a command-line tool that generates a README.md from user inputs.
+undefined
 ## Table of Contents
 - [Description](#description) 
 - [Installation](#installation)
@@ -15,30 +15,27 @@ This application builds a command-line tool that generates a README.md from user
 - [Questions](#questions)
 
 ## Installation 💾
-The following commands need to be run: npm i & npm install inquirer
+undefined
 
 ## Usage 🖥️
-This will assist user to create a README.md
+undefined
 
 ## License
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![badge](https://img.shields.io/badge/license-undefined-brightgreen)
 <br />
 
-This application is covered by the MIT license. 
+This application is covered by the undefined license. 
 
 ## Contributing 👩‍💻
-Miranda Zermeno
+undefined
 
 ## Tests 📝
-No tests included.
+undefined
 
 ## Questions 💭
 undefined
-<br/>
-<br/>
 
-Find me on GitHub: [Zermeno94](https://github.com/Zermeno94)
-<br/>
-<br/>
-📧Email me with any questions: miranda.zermeno4@gmail.com<br /><br />
+GitHub: [undefined](https://github.com/undefined)
+
+📧Email: [undefined](mailto:undefined)
   

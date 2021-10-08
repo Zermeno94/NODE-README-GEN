@@ -1,12 +1,12 @@
 // Exporting and Internal packages 
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 //Prompt the user questions to populate the README.md
 function promptUser(){
-    return inquirer.prompt = ()=> ([
+     inquirer.prompt([
         {
             type: "input",
             name: "projectTitle",
@@ -63,22 +63,28 @@ function promptUser(){
             name: "repo",
             message: "Please provide link to your GitHub repository. "
         }
-    ]);
-} 
+    ]).then((input) => {
 
-function writeToFile(fileName, data) {
-    fs.writeFileSync('./output/readme.md', generateMarkdown(answers));
-}
+        const message= generateMarkdown(input)
+        fs.writeFileSync('./output/readme.md',message, (err)=>err? console.log(err): console.log(generateReadme)); 
+        console.log(input)
+        
+    }).catch(function(){
+        console.log("promise rejected")
+    }) 
+
+};
+
 
 
   const init= () => { // Prints out README.md to 'output' file 
-    promptUser ()
-        .then((answers) => fs.writeFileSync('./output/README.MD', generateMarkdown(answers)))
-
-        .then(() => console.log('Success! You created a README.md.'))
-        .catch((err) => console.error(err));
+    promptUser()
+    // console.log("Hello")
+    // writeToFile(inquirer.prompt)
+        // ((inquirer.prompt) => writeToFile('./output/README.MD', generateMarkdown(inquirer.prompt)))
+        // .then(() => console.log('Success! You created a README.md.'))
+        // .catch((err) => console.error(err));
         
-    
   };
   init();  
 

@@ -1,10 +1,10 @@
 
 // TODO: Create a function to generate markdown for README
 function generateReadme(answers) {
-  return `
+  `
 <h1> ✨${answers.projectTitle} ✨</h1>
 
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br/> 
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 
 ## Description 📖  
 ${answers.description}
@@ -40,7 +40,7 @@ ${answers.questions}
 
 GitHub: [${answers.username}](https://github.com/${answers.username})
 
-📧Email: [${data.email}](mailto:${data.email})
+📧Email: [${answers.email}](mailto:${answers.email})
   `;
 }
 
