@@ -2,8 +2,12 @@
 
 ## Description
 
-This application builds a command-line tool that generates a READ.md from user inputs.
+This application will help a user to create a README.md by using a single command-line tool. 
 
+
+## Tasks Completed 
+
+Utilized node.js and npm inquirer to generate README.md
 
 ## User Story
 
@@ -12,19 +16,6 @@ AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
-
-## Table of contents
-
-   * [Description](#Description)
-   * [Installation](#Installation)
-   * [Usage](#Usage)
-   * [License](#License)
-   * [Contributors](#Contributors)
-   * [Test](#Test)
-   * [Repository](#Repository)
-   * [GitHub info](#GitHub)
-   * [Resources](#Resources)
-
 
 ## Installation 
 
@@ -40,40 +31,23 @@ To generate your own README.md, you will first need to run:
 
 The application can be invoked with `node index.js` 
 
-## Usage
+## Screenshots and Recording 
 
+[Screenshot]
 
 [enter screencastify demo here ]
 
-[enter explantion here ]
+## Links
 
-## License 
+[Link to the deloyed](#https://zermeno94.github.io/NODE-README-GEN/)
 
+[Link to the repositroy](#https://github.com/Zermeno94/NODE-README-GEN)
 
- - MIT License 
+## Credits
+ Miranda Zermeno
 
-## Contributors 
-
-
-- Miranda Zermeno
-
-## Test
-
-[enter here]
-
-## Repository
-
-
-* ["https://github.com/Zermeno94/NODE-README-GEN"]
-
-
-## GitHub info
-
-
-[enter info here ]
 
 ## Resources & Tutorials
-
 
 * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 * https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error
