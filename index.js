@@ -77,9 +77,10 @@ function promptUser(){
 
   const init= () => { // Prints out README.md to 'output' file 
     promptUser()
-    .then(() => console.log('Successfully wrote to README.MD'))
+    // console.log('Successfully wrote to README.MD');
         
   };
+
   init();  
 
 

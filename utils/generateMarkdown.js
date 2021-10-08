@@ -1,6 +1,6 @@
 
 // TODO: Create a function to generate markdown for README
- function generateReadme(answers){
+ const generateReadme = (answers) => 
   `
  ✨${answers.projectTitle} ✨
 
@@ -42,8 +42,8 @@ GitHub: [${answers.username}](https://github.com/${answers.username})
 
 📧Email: [${answers.email}](mailto:${answers.email})
   `;
-}
 
+ 
 module.exports = generateReadme;
 
 // This was original approach to generateMarkdown rendering, but found it too messy and changed it. 

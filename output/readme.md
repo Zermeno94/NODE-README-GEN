@@ -1,10 +1,10 @@
 
-<h1> ✨undefined ✨</h1>
+ ✨Miranda ✨
 
-![badge](https://img.shields.io/badge/license-undefined-brightgreen)<br/> 
+![badge](https://img.shields.io/badge/license-GPL-brightgreen)
 
 ## Description 📖  
-undefined
+love
 ## Table of Contents
 - [Description](#description) 
 - [Installation](#installation)
@@ -15,27 +15,27 @@ undefined
 - [Questions](#questions)
 
 ## Installation 💾
-undefined
+you
 
 ## Usage 🖥️
-undefined
+a 
 
 ## License
-![badge](https://img.shields.io/badge/license-undefined-brightgreen)
-<br />
+![badge](https://img.shields.io/badge/license-GPL-brightgreen)
 
-This application is covered by the undefined license. 
+
+This application is covered by the GPL license. 
 
 ## Contributing 👩‍💻
-undefined
+lot
 
 ## Tests 📝
-undefined
+hello
 
 ## Questions 💭
 undefined
 
-GitHub: [undefined](https://github.com/undefined)
+GitHub: [hi](https://github.com/hi)
 
-📧Email: [undefined](mailto:undefined)
+📧Email: [hello](mailto:hello)
   
