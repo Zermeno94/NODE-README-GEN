@@ -2,7 +2,7 @@
 // TODO: Create a function to generate markdown for README
  const generateReadme = (answers) => 
   `
- ✨${answers.projectTitle} ✨
+ ##✨${answers.projectTitle} ✨
 
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 
