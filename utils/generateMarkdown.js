@@ -1,6 +1,6 @@
 
 // TODO: Create a function to generate markdown for README
-function generateReadme(answers) {
+ function generateReadme(answers){
   `
  ✨${answers.projectTitle} ✨
 

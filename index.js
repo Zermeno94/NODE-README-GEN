@@ -77,11 +77,7 @@ function promptUser(){
 
   const init= () => { // Prints out README.md to 'output' file 
     promptUser()
-    // console.log("Hello")
-    // writeToFile(inquirer.prompt)
-        // ((inquirer.prompt) => writeToFile('./output/README.MD', generateMarkdown(inquirer.prompt)))
-        // .then(() => console.log('Success! You created a README.md.'))
-        // .catch((err) => console.error(err));
+    .then(() => console.log('Successfully wrote to README.MD'))
         
   };
   init();  
