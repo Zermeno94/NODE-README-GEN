@@ -22,7 +22,7 @@ SO THAT I can quickly create a professional README for a new project
 To generate your own README.md, you will first need to run: 
 
 ```bash
-  npm i
+  npm i  y
 ``` 
 ```bash
    npm install inquirer
@@ -33,14 +33,14 @@ The application can be invoked with `node index.js`
 
 ## Recording 
 
-[Link to recording](#https://watch.screencastify.com/v/sTJCs1bz6RgtaU7xTfhD)
+* #https://watch.screencastify.com/v/sTJCs1bz6RgtaU7xTfhD)
 
 
 ## Links
 
-[Link to the deloyed](#https://zermeno94.github.io/NODE-README-GEN/)
+*#https://zermeno94.github.io/NODE-README-GEN/)
 
-[Link to the repositroy](#https://github.com/Zermeno94/NODE-README-GEN)
+*#https://github.com/Zermeno94/NODE-README-GEN)
 
 ## Credits
  Miranda Zermeno
