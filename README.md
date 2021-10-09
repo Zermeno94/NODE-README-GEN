@@ -31,11 +31,10 @@ To generate your own README.md, you will first need to run:
 
 The application can be invoked with `node index.js` 
 
-## Screenshots and Recording 
+## Recording 
 
-[Screenshot]
+[Link to recording](#https://watch.screencastify.com/v/sTJCs1bz6RgtaU7xTfhD)
 
-[enter screencastify demo here ]
 
 ## Links
 

@@ -1,10 +1,10 @@
 
- ✨HW 09-NODE-README-GEN ✨
+ ##✨HW-NODE=README-GEN ✨
 
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![badge](https://img.shields.io/badge/license-GPL-brightgreen)
 
 ## Description 📖  
-This application builds a command-line tool that generates a READ.md from users inputs.
+A application that creates a README.md by using a single command line.
 ## Table of Contents
 - [Description](#description) 
 - [Installation](#installation)
@@ -15,27 +15,27 @@ This application builds a command-line tool that generates a READ.md from users 
 - [Questions](#questions)
 
 ## Installation 💾
-User will need to run npm i and npm install inqurier
+User will need to run npm i -y and then npm i inquirer
 
 ## Usage 🖥️
-To create a README.md for user.
+None
 
 ## License
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![badge](https://img.shields.io/badge/license-GPL-brightgreen)
 
 
-This application is covered by the MIT license. 
+This application is covered by the GPL license. 
 
 ## Contributing 👩‍💻
 Miranda Zermeno
 
 ## Tests 📝
-No tests run
+No Tests
 
 ## Questions 💭
 undefined
 
 GitHub: [Zermeno94](https://github.com/Zermeno94)
 
-📧Email: [miranda.zermeno4@gmail.com](mailto:miranda.zermeno4@gmail.com)
+📧Email: [miranda.zermeno94@gmail.com](mailto:miranda.zermeno94@gmail.com)
   
